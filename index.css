@@ -1,0 +1,288 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #140BFD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav ul li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+/* Logo */
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Menu */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #140BFD;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+}
+section{
+    display: flex;
+}
+#designpart{
+    padding: 20px;
+    background: linear-gradient(blue,#0BDDFD,blue);
+}
+#designpart img{
+    width: 20vw;
+    height: 20vw;
+}
+.left{
+    padding: 20px;
+    margin: 0 auto;
+}
+.left h1{
+    font-size: 5rem;
+}
+.left p{
+    font-size: 1.5rem;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+/*Start*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section Styling */
+#designpart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    background: linear-gradient(blue, #0BDDFD, blue);
+}
+
+/* Left Section - Text */
+.left {
+    width: 50%;
+    padding: 20px;
+}
+
+.left h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.left p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Right Section - Image */
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #designpart {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left h1 {
+        font-size: 3rem;
+    }
+
+    .left p {
+        font-size: 1.2rem;
+    }
+
+    .right img {
+        max-width: 250px;
+    }
+}
+/*sportsdisplay*/
+/* Remove default link styles */
+.sport-link {
+    text-decoration: none;
+    width: 23%; /* Match the div size */
+    height: 100%;
+    overflow-y: hidden;
+
+}
+
+/* Sports Display Section */
+#sportsdisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 40vh;
+    gap: 20px;
+    /* background: #140BFD; */
+    /* color: white; */
+    color: black;
+}
+
+/* Individual Sports Boxes */
+.sportname {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    cursor: pointer; /* Make it clear it's clickable */
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    border-radius: 50%;
+}
+
+.sportname:hover {
+    transform: scale(1.05);
+}
+
+/* Background Images */
+.cricket {
+    background-image: url("cricket.jpg");
+}
+
+.badminton {
+    background-image: url("https://th.bing.com/th/id/R.519657e51a4880fe71217c9cf4dbc963?rik=9JKO4LRotrouKg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1852950.jpg&ehk=p8E%2f3YwZk5Wtmc1gz2x7YpWveTL%2b3mBFXIyRhLtINSc%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.football {
+    background-image: url("https://th.bing.com/th/id/R.38d505da022c387aa620b4a8cd61f5d8?rik=2znGpI2YOQDJug&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-2%2fSoccer-HD-Wallpapers-04301.jpg&ehk=XfTuh%2fGTm9GYk0VurZ93bjbi2dAWWIT%2bnq0SW25fCHU%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.hockey {
+    background-image: url("https://wallpapercave.com/wp/wp2954043.jpg");
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #sportsdisplay {
+        height: auto;
+    }
+
+    .sport-link {
+        width: 45%; /* Two items per row */
+        height: 30vh;
+    }
+}
+
+@media (max-width: 600px) {
+    #sportsdisplay {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sport-link {
+        width: 100%; /* Full width on smaller screens */
+        height: 25vh;
+    }
+}
+
+/*about*/
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+    background: #140BFD;
+    color: white;
+}
+#about h1{
+    font-size: 3.5rem;
+}
+#about p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#about li{
+    font-size: 1.2rem;
+}
